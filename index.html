@@ -6,13 +6,13 @@
 		 <!-- Meta pour la responsive -->
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<!-- Link du CSS de Bootstrap -->
-		<link rel="stylesheet" type="text/css" href="css/bootstrap.css" >
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 		<!-- Link du JS JQuery -->
-		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/jquery-3.0.0.js"></script>
 		<!-- Link du JS de Bootstrap -->
 		<script type="text/javascript" src="js/bootstrap.js"></script>
 		<!-- Link de notre CSS  -->
-		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<title>Site Face</title>
 		<!-- Coloration de Safari sur mobile -->
 		<meta name="apple-mobile-web-app-capable" content="yes">
@@ -44,12 +44,12 @@
 
 				 <ul>
 				 	<!-- Lien de la page active -->
-				 	<li id="focusLI"><a href="#">Accueil</a></li>
-				 	<li><a href="#">Présentation</a></li>
-				 	<li><a href="#">Galerie</a></li>
-				 	<li><a href="#">Partenaires</a></li>
-				 	<li><a href="#">La Fabrik</a></li>
-				 	<li><a href="#">Contact</a></li>
+				 	<li id="focusLI"><a href="#" onclick="loadPage('accueil.html')">Accueil</a></li>
+				 	<li><a href="#" onclick="loadPage('presentation.html')">Présentation</a></li>
+				 	<li><a href="#"onclick="loadPage('galerie.html')">Galerie</a></li>
+				 	<li><a href="#"onclick="loadPage('partenaires.html')">Partenaires</a></li>
+				 	<li><a href="#"onclick="loadPage('lafabrique.html')">La Fabrik</a></li>
+				 	<li><a href="#" onclick= "loadPage('contact.html')">Contact</a></li>
 				 </ul>
 
 			 </div>
@@ -58,99 +58,90 @@
 
 	</div>
 
+
+<!-- 	<button onclick="javascript:loadPage('accueil.html');">Cliquer pour charger la Div ci-dessous fr</button>  -->
+
 	<!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
 	<!-- ///////////////////////////////////////////////////////////CONTENU/////////////////////////////////////////////////////////////// -->
-	<!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
-<article>
-		<img id="face" src="contact.jpg"> 
-		Contacter Face Territoire Bourbonnais
-		3 r Berthelot, 03000 MOULINS  
-		Tél : 04 70 20 43 70
-</article>
+	<div id="page1">	<!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
 
-<article> 
-		<img id ="president" src="president.jpg">
-		Didier Luminet 
-		Présidé par un chef d’entreprise,
-		Tel: 06.64.02.12.99 
-		Mail: faceterritoirebourbonnais@gmail.com 
-</article>
-
-<article>
-		<img  id = "eric" src="eric.jpg">
-		Eric Getenay 
-		Chargé des relations entreprises
-		Tél : 06 89 32 71 09
-		Mail : fab_numerique_allier@fondationface.org
-</article>
-
-<article> 
-	<img id ="christine" src="christine.jpg">
-	Christine Berger
-	Administrative et Commerciale
-	Tel: 06 73 65 04 95
-	Mail: c.berger@fondationface.org
-</article>
-
-<article>
-	<img id="xavier" src="xavier.jpg">
-	Xavier de Soultrait 
-	Face Territoire Bourbonnais
-	Tel: 06 75 81 23 40
-	Mail: xavier.desoultrait@gmail.com
-
-
-
-
+	<div id="corpsDeLaPage">
+	</div>
+	
 	<!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
 	<!-- ///////////////////////////////////////////////////////////FOOTER///////////////////////////////////////////////////////////////// -->
 	<!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
-	<footer>
-      <div class="caroussel" style="margin-top:40px;" >
-      <div id="single" class="carousel slide" data-ride="carousel" data-shift="1">
-      <h2 >NOS PARTENAIRES</h2>
-      <div class="carousel-inner" >
-        <ul class="row item active" >
-          <li id="ag2r" class="col-xs-4 one"> <a href="http://www.ag2rlamondiale.fr/"><img src="img/ag2r.jpg"< class="img-responsive"></a> </li>
-          <li id="admical" class="col-xs-4 one"> <a href="http://www.admical.org/"> <img src="img/admical.jpg" class="img-responsive"></a> </li>
-          <li id="afmd" class="col-xs-4 one"> <a href="http://www.afmd.fr/"><img src="img/afmd.jpg" class="img-responsive"></a> </li>
-        </ul>
-        <ul class="row item">
-          <li id="acse" class="col-xs-4 one"><a href="http://www.federation-fare.fr/partenaires/acse"> <img src="img/ACSE.gif" class="img-responsive"></a></li>
-          <li id="anru" class="col-xs-4 one"><a href="http://www.anru.fr/"> <img src="img/ANRU.gif" class="img-responsive"></a> </li>
-          <li id="apf" class="col-xs-4 one"> <a href="http://www.apf.asso.fr/"><img src="img/apf.jpg" class="img-responsive"></a> </li>
-        </ul>
-        <ul class="row item">
-          <li id="civique" class="col-xs-4 one"><a href="http://www.service-civique.gouv.fr//"> <img src="img/civique.png" class="img-responsive"></a> </li>
-          <li id="cnam" class="col-xs-4 one"><a href="http://www.cnam.fr//"> <img src="img/cnam.jpg" class="img-responsive"></a> </li>
-          <li id="cuisines" class="col-xs-4 one"><a href="http://www.cuisinemodemplois.com/"> <img src="img/cuisines.gif" class="img-responsive"></a> </li>
-        </ul>
-        <ul class="row item">
-          <li id="diversite" class="col-xs-4 one"><a href="http://www.charte-diversite.com/"> <img src="img/diversite.jpg" class="img-responsive"></a> </li>
-          <li id="fei" class="col-xs-4 one"><a href="https://www.fei.org/"> <img src="img/fei.gif" class="img-responsive"></a> </li>
-          <li id="laposte" class="col-xs-4 one"><a href="http://www.laposte.fr/"> <img src="img/laposte.jpg" class="img-responsive"></a> </li>
-        </ul>
-        <ul class="row item">
-          <li id="ministere" class="col-xs-4 one"><a href="http://www.education.gouv.fr/pid7/le-ministere.html"> <img src="img/ministere.gif" class="img-responsive"></a> </li>
-          <li id="poleemploi" class="col-xs-4 one"><a href="http://www.ag2rlamondiale.fr/"> <img src="img/poleemploi.jpg" class="img-responsive"></a> </li>
-          <li id="ratp" class="col-xs-4 one"><a href="http://www.pole-emploi.fr/accueil/"> <img src="img/ratp.jpg" class="img-responsive"> </a></li>
-        </ul>
-        <ul class="row item">
-          <li id="total" class="col-xs-4 one"><a href="http://www.ag2rlamondiale.fr/"> <img src="img/total.jpg" class="img-responsive"></a> </li>
-          <li id="union" class="col-xs-4 one"><a href="http://www.ag2rlamondiale.fr/"> <img src="img/union.png" class="img-responsive"></a> </li>
-        </ul>
-      </div>
-      <a class="carousel-control left" href="#single" data-slide="prev"><</a> <a class="carousel-control right" href="#single" data-slide="next">></a> 
-      </div>
-      </div>
-    </footer>
-				</div>
+
+	<div class="row">
+		
+		<div id="footer">
+
+			<!-- Div des mentions légales -->
+			<div class="col-xs-12 col-xs-offset-3 col-md-offset-3">
+
+				<ul>Mentions légales
+					<li>Copyrigth</li>
+					<li>Exemples</li>
+				</ul>
+
 			</div>
+
+			<!-- Div du caroussel des partenaires -->
+			<div class="col-xs-6 col-xs-offset-3 col-md-offset-3">
+
+				<div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+					  <!-- Indicateur de page -->
+					  <ol class="carousel-indicators">
+						    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+						    <li data-target="#myCarousel" data-slide-to="1"></li>
+						    <li data-target="#myCarousel" data-slide-to="2"></li>
+						    <li data-target="#myCarousel" data-slide-to="3"></li>
+					  </ol>
+
+					  <!-- Le slider -->
+					  <div class="carousel-inner" role="listbox">
+
+						    <div class="item active">
+						     	<img  id="imgCarousel" src="img/logo.jpg" alt="" >
+						    </div>
+
+						    <div class="item">
+						      	<img id="imgCarousel" src="img/une1.png" alt="">
+						    </div>
+
+						    <div class="item">
+						      	<img id="imgCarousel" src="img/une2.png" alt="">
+						    </div>
+
+						    <div class="item">
+						     	<img id="imgCarousel" src="img/une3.png" alt="">
+						    </div>
+
+					 </div>
+
+					  <!-- Flèches pour changer d'image -->
+					  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+					    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+					    <span class="sr-only">Previous</span>
+					  </a>
+					  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+					    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+					    <span class="sr-only">Next</span>
+					  </a>
+
+				</div>
+
+			</div>
+
 		</div>
+
 	</div>
+
 		<!-- Link de notre script JS -->
-		<script type="text/javascript" src="script.js"></script>
-		<script src="http://code.jquery.com/jquery-1.12.0.min.js"></script> 
-		<script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script> 
+		<script type="text/javascript" src="js/script.js"></script>
+
 	</body>
+
 </html>	
+
